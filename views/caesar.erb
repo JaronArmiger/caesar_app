@@ -1,0 +1,12 @@
+<html>
+	<body>
+		<p>
+			<% if @encoded %>
+				Your string: <%= @string %>. Your string encoded <%= @encoded %>.
+			<% end %>
+			<form action="caesar" method="post">
+				<input type="text" name="string" value="<%= @string %>" />
+				<input type="submit">
+		</p>
+	</body>
+</html>
