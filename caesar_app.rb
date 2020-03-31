@@ -7,7 +7,7 @@ require 'erb'
 get '/' do
 	@string = params["string"]
 	@offset = params["offset"]
-	erb :caesar
+	erb :index
 end
 
 
